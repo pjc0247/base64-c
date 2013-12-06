@@ -19,7 +19,7 @@ char get_at(int idx){
 	return idx_table[idx];
 }
 
-void encode(const char *src,int src_size,char *dst,int dst_size){
+void encode(const unsigned char *src,int src_size,char *dst,int dst_size){
 	int offset = 0, offset2 = 0;
 	int r = 8,r2 = 6;
 	unsigned char s = 0;
