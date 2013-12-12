@@ -46,7 +46,7 @@ void encode(const unsigned char *src,int src_size,char *dst,int dst_size){
 	if(s)
 		dst[offset2] = get_at(s<<r2);
 }
-void decode(const char *src,int src_size,char *dst,int dst_size){
+void decode(const char *src,int src_size,unsigned char *dst,int dst_size){
 	int offset=0,offset2=0;
 	int r = 8,r2 = 6;
 
